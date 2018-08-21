@@ -27,7 +27,7 @@ a {
   flex-direction: row;
 }
 
-#nav-bar {
+#header-bar {
   margin-bottom: 2rem;
   padding: 2.5rem 0;
   position: fixed;
@@ -35,17 +35,17 @@ a {
   position: relative;
 }
 
-#nav-bar #logo-wrapper {
+#header-bar #logo-wrapper {
   
   flex-grow: 1;
   align-self: center;
 }
 
-#nav-bar #nav-bar-logo {
+#header-bar #header-bar-logo {
   width: 3rem;
 }
 
-#nav-bar ul {
+#header-bar ul {
   margin: 0;
   padding: 0 0.8rem;
   position: absolute;
@@ -54,25 +54,25 @@ a {
   transform: translateX(-50%) translateY(-50%);
 }
 
-#nav-bar ul li {
+#header-bar ul li {
   display: inline-block;
   margin: 0 0.8rem;
 }
 
-#nav-bar ul li a {
+#header-bar ul li a {
   color: #014760;
 }
 
-#nav-bar #nav-bar-login-signin {
+#header-bar #header-bar-login-signin {
   flex-grow: 1;
   align-self: center;
   text-align: right;
 }
 
-#nav-bar #nav-bar-login {
-  
+#header-bar #header-bar-login {
+  color: #014760;
 }
 
-#nav-bar .button {
+#header-bar .button {
   margin-left: 2rem;
 }
