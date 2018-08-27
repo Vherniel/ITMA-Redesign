@@ -1,0 +1,31 @@
+{
+  "name": "itma-redesign",
+  "version": "1.0.0",
+  "description": "Redesign of ITMA. An imaginary company for entrepreneurship class and also a showcase project for my upcoming portfolio.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "pug": "pug index.pug -w -o dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vherniel/ITMA-Redesign.git"
+  },
+  "author": "Vherniel L. Lebis",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Vherniel/ITMA-Redesign/issues"
+  },
+  "homepage": "https://github.com/Vherniel/ITMA-Redesign#readme",
+  "dependencies": {
+    "node-sass": "^4.9.3",
+    "normalize.css": "^8.0.0",
+    "npm": "^6.4.0",
+    "pug": "^2.0.3",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.13.0"
+  }
+}
