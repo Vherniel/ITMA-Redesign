@@ -1,10 +1,17 @@
 /*
---  GLOBAL TAGS
+**  Variables  **
 */
+/*
+**  Tag Configurations  **
+*/
+:root {
+  font-size: 12px; }
+
 html, body {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 600; }
+  font-size: 100%;
+  font-weight: 500;
+  height: 100%; }
 
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
@@ -13,32 +20,38 @@ h1, h2, h3, h4, h5, h6, p {
 a {
   text-decoration: none; }
 
-em {
+h1 {
+  color: #00465F;
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem;
+  color: #333; }
+
+h3 {
+  font-size: 1rem;
+  color: #777;
+  text-transform: uppercase; }
+
+p {
+  color: #777;
+  font-size: 1.5rem;
+  line-height: 2.25rem; }
+
+/*
+**  Classes
+*/
+.container-main {
+  width: 75%;
+  margin: auto;
+  overflow: hidden; }
+
+.special-emphasis {
   color: #43B9DD;
   text-decoration: underline;
   font-style: normal; }
 
-h1 {
-  color: #00465F;
-  font-size: 3.5rem;
-  padding: 1rem 0; }
-
-h3 {
-  font-size: 1rem;
-  color: #555;
-  text-transform: uppercase;
-  padding: 1rem 0; }
-
-p {
-  color: #555;
-  padding: 1rem 0;
-  font-size: 1.2rem;
-  line-height: 2rem; }
-
-/*
---  CLASSES
-*/
-.cta-buttons {
+.cta-buttons-container {
   padding: 1rem 0;
   margin: 1rem 0;
   text-transform: uppercase; }
@@ -46,67 +59,52 @@ p {
 .cta-button-signup {
   background-color: #00465F;
   color: #fff;
-  padding: 1rem 2rem; }
+  padding: 1.5rem 2.5rem; }
 
 .cta-button-login {
-  color: #555;
-  margin-right: 2rem; }
+  color: #777;
+  margin-right: 2.5rem; }
 
 .cta-button-learnmore {
-  margin-left: 1rem;
-  color: #555; }
-
-.container-main {
-  width: 75%;
-  margin: auto;
-  overflow: hidden; }
+  margin-left: 1.25rem;
+  color: #777; }
 
 /*
---  HEADER TOP
+**  Header Navigation Menu
 */
 #header-top {
   position: fixed;
-  width: 100%;
   top: 0;
-  left: 0; }
-
-#header-top #header-container {
-  margin: 2.5rem 3.5rem;
+  left: 0;
+  width: 100%;
+  padding: 2.75rem 4rem;
   display: flex;
-  align-items: center;
-  text-transform: uppercase; }
+  box-sizing: border-box;
+  align-items: center; }
 
-#header-top #logo-container {
-  flex-grow: 1; }
+#logo-container {
+  flex: 1; }
 
-#header-top #logo {
-  width: 3rem; }
+#logo-container svg {
+  width: 4rem;
+  height: 4rem; }
 
-#header-top #nav-top {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%); }
+#header-top nav {
+  flex: 1; }
 
-#header-top #link-container {
+#header-top nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+
+#header-top nav ul li {
   list-style: none;
-  padding: 0; }
-
-#header-top #link-container li {
   display: inline-block;
   padding: 1rem; }
 
-#header-top #link-container li a {
+#header-top nav ul li a {
   color: #00465F; }
 
-#header-top #cta-buttons {
+#header-top .cta-buttons {
+  flex: 1;
   text-align: right; }
-
-/*
---  MAIN SECTION
-*/
-#landing-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh; }

@@ -1,15 +1,34 @@
-$primary-color: #00465F;
-$secondary-color: #43B9DD;
-$subtitle-color: #555;
-
 /*
---  GLOBAL TAGS
+**  Variables  **
 */
 
-html,body {
-  font-family: Montserrat, Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 600;
+$color-dark-teal: #00465F;
+$color-light-blue: #43B9DD;
+$color-regular-gray: #777;
+$color-black: #333;
+$color-white: #fff;
+$font-family: Montserrat, Arial, Helvetica, sans-serif;
+$root-font-size: 12px;
+$heading-large-font-size: 3rem;
+$heading-medium-font-size: 2rem;
+$heading-small-font-size: 1rem;
+$default-font-weight: 500;
+$paragraph-line-height: 2.25rem;
+$paragraph-font-size: 1.5rem;
+
+/*
+**  Tag Configurations  **
+*/
+
+:root {
+  font-size: $root-font-size;
+}
+
+html, body {
+  font-family: $font-family;
+  font-size: 100%;
+  font-weight: $default-font-weight;
+  height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -21,57 +40,32 @@ a {
   text-decoration: none;
 }
 
-em {
-  color: $secondary-color;
-  text-decoration: underline;
-  font-style: normal;
+h1 {
+  color: $color-dark-teal;
+  font-size: $heading-large-font-size;
 }
 
-h1 {
-  color: $primary-color;
-  font-size: 3.5rem;
-  padding: 1rem 0;
+h2 {
+  font-size: $heading-medium-font-size;
+  color: $color-black;
+
 }
 
 h3 {
-  font-size: 1rem;
-  color: $subtitle-color;
+  font-size: $heading-small-font-size;
+  color: $color-regular-gray;
   text-transform: uppercase;
-  padding: 1rem 0;
 }
 
 p {
-  color: $subtitle-color;
-  padding: 1rem 0;
-  font-size: 1.2rem;
-  line-height: 2rem;
+  color: $color-regular-gray;
+  font-size: $paragraph-font-size;
+  line-height: $paragraph-line-height;
 }
 
 /*
---  CLASSES
+**  Classes
 */
-
-.cta-buttons {
-  padding: 1rem 0;
-  margin: 1rem 0;
-  text-transform: uppercase;
-}
-
-.cta-button-signup {
-  background-color: $primary-color;
-  color: #fff;
-  padding: 1rem 2rem;
-}
-
-.cta-button-login {
-  color: $subtitle-color;
-  margin-right: 2rem;
-}
-
-.cta-button-learnmore {
-  margin-left: 1rem;
-  color: $subtitle-color;
-}
 
 .container-main {
   width: 75%;
@@ -79,64 +73,80 @@ p {
   overflow: hidden;
 }
 
-/*
---  HEADER TOP
-*/
-
-#header-top {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  left: 0;
+.special-emphasis {
+  color: $color-light-blue;
+  text-decoration: underline;
+  font-style: normal;
 }
 
-#header-top #header-container {
-  margin: 2.5rem 3.5rem;
-  display: flex;
-  align-items: center;
+.cta-buttons-container {
+  padding: 1rem 0;
+  margin: 1rem 0;
   text-transform: uppercase;
 }
 
-#header-top #logo-container {
-  flex-grow: 1;
+.cta-button-signup {
+  background-color: $color-dark-teal;
+  color: $color-white;
+  padding: 1.5rem 2.5rem;
 }
 
-#header-top #logo {
-  width: 3rem;
+.cta-button-login {
+  color: $color-regular-gray;
+  margin-right: 2.5rem;
 }
 
-#header-top #nav-top {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+.cta-button-learnmore {
+  margin-left: 1.25rem;
+  color: $color-regular-gray;
 }
 
-#header-top #link-container {
-  list-style: none;
+/*
+**  Header Navigation Menu
+*/
+
+
+#header-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.75rem 4rem;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+#logo-container {
+  flex: 1;
+}
+
+#logo-container svg {
+  width: 4rem;
+  height: 4rem;
+}
+
+#header-top nav {
+  flex: 1;
+}
+
+#header-top nav ul {
+  margin: 0;
   padding: 0;
+  text-align: center;
 }
 
-#header-top #link-container li {
+#header-top nav ul li {
+  list-style: none;
   display: inline-block;
   padding: 1rem;
 }
 
-#header-top #link-container li a {
-  color: $primary-color;
+#header-top nav ul li a {
+  color: $color-dark-teal;
 }
 
-#header-top #cta-buttons {
+#header-top .cta-buttons {
+  flex: 1;
   text-align: right;
-}
-
-/*
---  MAIN SECTION
-*/
-
-#landing-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
 }
