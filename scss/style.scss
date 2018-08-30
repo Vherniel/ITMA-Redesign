@@ -9,12 +9,12 @@ $color-black: #333;
 $color-white: #fff;
 $font-family: Montserrat, Arial, Helvetica, sans-serif;
 $root-font-size: 12px;
-$heading-large-font-size: 3rem;
+$heading-large-font-size: 4rem;
 $heading-medium-font-size: 2rem;
 $heading-small-font-size: 1rem;
 $default-font-weight: 500;
-$paragraph-line-height: 2.25rem;
-$paragraph-font-size: 1.5rem;
+$paragraph-line-height: 2.75rem;
+$paragraph-font-size: 1.3rem;
 
 /*
 **  Tag Configurations  **
@@ -23,130 +23,167 @@ $paragraph-font-size: 1.5rem;
 :root {
   font-size: $root-font-size;
 }
-
 html, body {
   font-family: $font-family;
   font-size: 100%;
   font-weight: $default-font-weight;
   height: 100%;
 }
-
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
   padding: 0;
 }
-
 a {
   text-decoration: none;
 }
-
 h1 {
   color: $color-dark-teal;
   font-size: $heading-large-font-size;
+  margin: 1rem 0;
 }
-
 h2 {
   font-size: $heading-medium-font-size;
   color: $color-black;
-
+  margin: 1rem 0;
 }
-
 h3 {
   font-size: $heading-small-font-size;
   color: $color-regular-gray;
   text-transform: uppercase;
+  margin: 1rem 0;
 }
-
 p {
   color: $color-regular-gray;
   font-size: $paragraph-font-size;
   line-height: $paragraph-line-height;
+  margin-bottom: 2rem;
 }
 
 /*
 **  Classes
 */
 
-.container-main {
+.container {
   width: 75%;
   margin: auto;
   overflow: hidden;
 }
-
 .special-emphasis {
   color: $color-light-blue;
   text-decoration: underline;
   font-style: normal;
 }
-
 .cta-buttons-container {
-  padding: 1rem 0;
-  margin: 1rem 0;
   text-transform: uppercase;
+  box-sizing: border-box;
+  margin: 1rem 0;
 }
-
 .cta-button-signup {
   background-color: $color-dark-teal;
   color: $color-white;
   padding: 1.5rem 2.5rem;
+  display: inline-block;
 }
-
 .cta-button-login {
   color: $color-regular-gray;
   margin-right: 2.5rem;
 }
-
 .cta-button-learnmore {
-  margin-left: 1.25rem;
+  padding: 1.5rem 2.5rem;
   color: $color-regular-gray;
+  display: inline-block;
 }
 
 /*
 **  Header Navigation Menu
 */
 
-
 #header-top {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2.75rem 4rem;
+  padding: 2.75rem 5rem;
   display: flex;
   box-sizing: border-box;
   align-items: center;
 }
-
 #logo-container {
   flex: 1;
 }
-
 #logo-container svg {
   width: 4rem;
   height: 4rem;
 }
-
 #header-top nav {
-  flex: 1;
+  flex: 2;
 }
-
 #header-top nav ul {
   margin: 0;
   padding: 0;
   text-align: center;
 }
-
 #header-top nav ul li {
   list-style: none;
   display: inline-block;
   padding: 1rem;
 }
-
 #header-top nav ul li a {
   color: $color-dark-teal;
+  text-transform: uppercase;
+  font-weight: 600;
 }
-
-#header-top .cta-buttons {
+#header-top .header-cta-buttons {
   flex: 1;
   text-align: right;
+}
+
+/*
+**  Landing Page
+*/
+
+#landing-page .company-description {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+/*
+**  Features Page
+*/
+
+#features {
+  height: 100vh;
+  position: relative;
+}
+
+#features .features-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 75%;
+}
+
+#features h1 {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+#features .features-description {
+  display: flex;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+#features .features-description div {
+  flex: 1;
+  padding: 2rem;
+}
+
+#features .features-description div a {
+  padding: 0;
+  text-transform: uppercase;
 }
