@@ -5,15 +5,16 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
     link(rel="stylesheet", type="text/css", href="/dist/css/normalize.css")
-    link(rel="stylesheet", type="text/css", href="/dist/css/style.css")
+    link(rel="stylesheet", type="text/css", href="/dist/css/main.css")
     link(rel="stylesheet", type="text/css", href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700,800")
-    // Replace .png to .ico
-    link(rel="shortcut icon", type="image/x-icon", href="/dist/img/favicon.png")
+    link(rel="shortcut icon", type="image/x-icon", href="/dist/img/favicon.ico")
     title ITMA®
   body
+
+    // Header
     header#header-top
       div#logo-container
-        //Logo  
+        // Logo  
         a(href="#")
           svg(xmlns="http://www.w3.org/2000/svg", viewBox="0 0 593.7 597.4")
             style(type="text/css").
@@ -23,6 +24,7 @@ html(lang="en")
             polygon(class="st0", points="319.8 170.7 160.2 597.4 273.9 597.4 433.4 170.7 ")
             polygon(class="st0", points="480.1 170.7 320.5 597.4 434.2 597.4 593.7 170.7 ")
             polygon(class="st0", points="223.7 0 0.3 597.4 114 597.4 337.3 0 ")
+      // Navigation Links
       nav
         ul
           li
@@ -31,40 +33,43 @@ html(lang="en")
             a(href="#") What is ITMA®?
           li
             a(href="#") Success Stories
+      // Call to action buttons
       div.header-cta-buttons
         a(href="#" class="cta-button-login") Log in
         a(href="#" class="cta-button-signup") Sign Up
+    
     main#landing-page
       div.container
         section.main-section
-          div.company-description
+          div.company-container
             header
               h3 Information Technology and Multimedia Arts®
               h1 All you need for#[br] #[em.special-emphasis Web] & #[em.special-emphasis Multimedia]#[br]Content
-            p We create high quality and international level services in both aspects of Web and Multimedia Services by utilizing the latest technologies and equipments to create high quality services.
+            p.company-description We create high quality and international level services in both aspects of Web and Multimedia Services by utilizing the latest technologies and equipments to create high quality services.
             div.cta-buttons-container
               a(href="#" class="cta-button-signup") Sign up
               a(href="#" class="cta-button-learnmore") Learn More
 
-    section#features
-      div.features-container
-        h1 Your professional way to #[em.special-emphasis success]
-        div.features-description
-          div
-            h2 Advanced Technologies
-            p Our services utilizes with advanced technologies and trends that will make every piece of your content will look more modern professional.
-            a(href="#" class="cta-button-learnmore") Learn more
-          div
-            h2 Keep Updated
-            p Keep track of your content with our 24/7 contact service. Keeping you connected is an opportunity to build your trust and keep updated on your content.
-            a(href="#" class="cta-button-learnmore") Learn more
-          div
-            h2 Exclusive Perks
-            p Recieve Exclusive perks including 20% discounts, extended trials, personalized support, and up to 35% of discount for your 3rd new content.
-            a(href="#" class="cta-button-learnmore") Learn more
-
-
-
+    section#features-page
+      div.container
+        div.features-container
+          h1 Your professional way to #[em.special-emphasis success]
+          div.features-description
+            div
+              h2 Advanced Technologies
+              p Our services utilizes with advanced technologies and trends that will make every piece of your content will look more modern professional.
+              div.features-cta-container
+                a(href="#" class="cta-button-learnmore") Learn more
+            div
+              h2 Keep Updated
+              p Keep track of your content with our 24/7 contact service. Keeping you connected is an opportunity to build your trust and keep updated on your content.
+              div.features-cta-container
+                a(href="#" class="cta-button-learnmore") Learn more
+            div
+              h2 Exclusive Perks
+              p Recieve Exclusive perks including 20% discounts, extended trials, personalized support, and up to 35% of discount for your 3rd new content.
+              div.features-cta-container
+                a(href="#" class="cta-button-learnmore") Learn more
 
     section
       // TODO 
