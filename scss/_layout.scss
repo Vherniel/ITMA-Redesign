@@ -1,0 +1,35 @@
+.container {
+  margin-left: 16.074%;
+  margin-right: 6.225%;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  margin: 3.429rem 0;
+  top: 0;
+  left: 0;
+}
+
+#main {
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
+
+.main_content {
+  width: 100%;
+}
+
+#page-link {
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 16.074%;
+}

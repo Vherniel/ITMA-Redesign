@@ -1,0 +1,32 @@
+.content-wrapper {
+  width: 50%;
+}
+
+.content_head-group {
+  margin-bottom: 1rem;
+}
+
+.content_head-3 {
+  color: $color-regular-gray;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.content_head-1 {
+  color: $color-primary;
+  font-size: 3.5rem;
+  margin-top: 1rem;
+}
+
+.content_description {
+  color: $color-regular-gray;
+  line-height: 1.85rem;
+  font-size: 1.2rem;
+}
+
+.special-emphasis {
+  color: $color-secondary;
+  text-decoration: underline;
+  font-style: normal;
+}

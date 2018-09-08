@@ -1,0 +1,170 @@
+:root {
+  font-size: 14px; }
+
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  font-weight: 600;
+  height: 100%; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  display: inline-block; }
+
+.container {
+  margin-left: 16.074%;
+  margin-right: 6.225%; }
+
+#header {
+  position: fixed;
+  width: 100%;
+  margin: 3.429rem 0;
+  top: 0;
+  left: 0; }
+
+#main {
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center; }
+
+.main_content {
+  width: 100%; }
+
+#page-link {
+  position: fixed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 16.074%; }
+
+.cta-btn {
+  text-transform: uppercase;
+  margin-top: 2rem; }
+
+.cta-btn_signup {
+  color: #fff;
+  padding: 1rem 2.143rem;
+  background-color: #00465f;
+  border: 1px solid transparent; }
+  .cta-btn_signup:hover {
+    color: #00465f;
+    border: 1px solid #00465f;
+    background-color: transparent; }
+
+.cta-btn_learnmore {
+  padding: 1rem 2.143rem;
+  color: #777; }
+
+.page-link_list {
+  list-style: none; }
+
+.page-link_items {
+  width: 1.607rem;
+  height: 2px;
+  background-color: #00465f;
+  margin: 1rem 0; }
+  .page-link_items:hover {
+    cursor: pointer; }
+
+.page-link_items.active {
+  width: 3.214rem;
+  height: 2px;
+  background-color: #00465f; }
+
+.header_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 87.555%;
+  margin: auto; }
+
+.header_logo-wrapper {
+  flex: 1; }
+
+.logo-btn {
+  display: inline-block;
+  width: 3.214rem; }
+
+.header_nav {
+  flex: 2; }
+
+.nav-list {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  list-style: none; }
+
+.nav-items {
+  display: inline-block;
+  margin: 0 0.5rem; }
+
+.nav-links {
+  color: #00465f;
+  padding: 1rem 0.5rem;
+  text-transform: uppercase; }
+
+.header_cta-btn {
+  flex: 1;
+  text-align: right; }
+
+.header_cta-btn {
+  text-transform: uppercase; }
+
+#cta-btn_login {
+  padding: 1rem 2.143rem;
+  color: #777; }
+
+@media (max-width: 1150px) {
+  .header_logo-wrapper {
+    flex: 0; }
+  .nav-list {
+    justify-content: flex-start;
+    padding-left: 3rem; } }
+
+.content-wrapper {
+  width: 50%; }
+
+.content_head-group {
+  margin-bottom: 1rem; }
+
+.content_head-3 {
+  color: #777;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem; }
+
+.content_head-1 {
+  color: #00465f;
+  font-size: 3.5rem;
+  margin-top: 1rem; }
+
+.content_description {
+  color: #777;
+  line-height: 1.85rem;
+  font-size: 1.2rem; }
+
+.special-emphasis {
+  color: #43b9dd;
+  text-decoration: underline;
+  font-style: normal; }

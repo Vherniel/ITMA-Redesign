@@ -1,23 +1,14 @@
-/*
-**  Variables  **
-*/
-
-$color-dark-teal: #00465F;
-$color-light-blue: #43B9DD;
+// COLORS
+$color-primary: #00465f;
+$color-secondary: #43b9dd;
 $color-regular-gray: #777;
 $color-black: #333;
 $color-white: #fff;
+
+// FONTS
 $font-family: Montserrat, Arial, Helvetica, sans-serif;
-$root-font-size: 12px;
 $heading-large-font-size: 4rem;
 $heading-medium-font-size: 1.75rem;
 $heading-small-font-size: 1rem;
-$default-font-weight: 500;
 $paragraph-line-height: 2.75rem;
 $paragraph-font-size: 1.3rem;
-
-@mixin posCenter {
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-}

@@ -1,0 +1,63 @@
+.header_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 87.555%;
+  margin: auto;
+}
+
+.header_logo-wrapper {
+  flex: 1;
+}
+
+.logo-btn {
+  display: inline-block;
+  width: 3.214rem;
+}
+
+.header_nav {
+  flex: 2;
+}
+
+.nav-list {
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-items {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.nav-links {
+  color: $color-primary;
+  padding: 1rem 0.5rem;
+  text-transform: uppercase;
+}
+
+.header_cta-btn {
+  flex: 1;
+  text-align: right;
+}
+
+.header_cta-btn {
+  text-transform: uppercase;
+}
+
+#cta-btn_login {
+  padding: 1rem 2.143rem;
+  color: $color-regular-gray;
+}
+
+@media (max-width: 1150px) {
+  .header_logo-wrapper {
+    flex: 0;
+  }
+
+  .nav-list {
+    justify-content: flex-start;
+    padding-left: 3rem;
+  }
+}

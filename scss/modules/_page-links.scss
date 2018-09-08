@@ -1,0 +1,20 @@
+.page-link_list {
+  list-style: none;
+}
+
+.page-link_items {
+  width: 1.607rem;
+  height: 2px;
+  background-color: $color-primary;
+  margin: 1rem 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.page-link_items.active {
+  width: 3.214rem;
+  height: 2px;
+  background-color: $color-primary;
+}
