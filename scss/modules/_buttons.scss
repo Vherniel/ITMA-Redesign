@@ -8,11 +8,17 @@
   padding: 1rem 2.143rem;
   background-color: $color-primary;
   border: 1px solid transparent;
+  transition: color 0.7s cubic-bezier(0.694, 0, 0.335, 1),
+    background-color 0.7s cubic-bezier(0.694, 0, 0.335, 1),
+    border 0.7s cubic-bezier(0.694, 0, 0.335, 1);
 
   &:hover {
     color: $color-primary;
     border: 1px solid $color-primary;
     background-color: transparent;
+    transition: color 0.5s cubic-bezier(0.694, 0, 0.335, 1),
+      background-color 0.5s cubic-bezier(0.694, 0, 0.335, 1),
+      border 0.5s cubic-bezier(0.694, 0, 0.335, 1);
   }
 }
 

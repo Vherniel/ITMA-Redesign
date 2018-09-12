@@ -82,11 +82,13 @@ a {
   color: #fff;
   padding: 1rem 2.143rem;
   background-color: #00465f;
-  border: 1px solid transparent; }
+  border: 1px solid transparent;
+  transition: color 0.7s cubic-bezier(0.694, 0, 0.335, 1), background-color 0.7s cubic-bezier(0.694, 0, 0.335, 1), border 0.7s cubic-bezier(0.694, 0, 0.335, 1); }
   .cta-btn_signup:hover {
     color: #00465f;
     border: 1px solid #00465f;
-    background-color: transparent; }
+    background-color: transparent;
+    transition: color 0.5s cubic-bezier(0.694, 0, 0.335, 1), background-color 0.5s cubic-bezier(0.694, 0, 0.335, 1), border 0.5s cubic-bezier(0.694, 0, 0.335, 1); }
 
 .cta-btn_learnmore {
   padding: 1rem 2.143rem;
