@@ -1,0 +1,29 @@
+.features_content_wrapper {
+  display: flex;
+  margin-top: 8rem;
+  justify-content: space-between;
+}
+
+.features_content_box {
+  display: flex;
+  flex-direction: column;
+  width: 285px;
+}
+
+.features_content_description {
+  color: $color-regular-gray;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.features_cta-btn {
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  margin-top: 1rem;
+}
+
+.features_cta-btn_learnmore {
+  color: $color-regular-gray;
+  text-transform: uppercase;
+}

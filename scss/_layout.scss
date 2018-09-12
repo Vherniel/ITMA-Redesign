@@ -1,6 +1,7 @@
 .container {
   margin-left: 16.074%;
   margin-right: 6.225%;
+  width: 100%;
 }
 
 #header {
@@ -41,4 +42,10 @@
   left: 0;
   display: flex;
   align-items: center;
+}
+
+.features_content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
 }
