@@ -74,6 +74,28 @@ a {
   flex-direction: column;
   margin-bottom: 5rem; }
 
+#contacts {
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  position: relative; }
+
+.contacts_wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center; }
+
+#clients {
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center; }
+
 .cta-btn {
   text-transform: uppercase;
   margin-top: 2rem; }
@@ -217,3 +239,7 @@ a {
 .features_cta-btn_learnmore {
   color: #777;
   text-transform: uppercase; }
+
+.contact_email {
+  font-size: 3.5rem;
+  color: #00465f; }

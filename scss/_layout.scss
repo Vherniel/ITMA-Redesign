@@ -49,3 +49,28 @@
   flex-direction: column;
   margin-bottom: 5rem;
 }
+
+#contacts {
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.contacts_wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+
+#clients {
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+}
