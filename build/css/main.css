@@ -94,7 +94,8 @@ a {
   top: 0;
   left: 0;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  justify-content: center; }
 
 .cta-btn {
   text-transform: uppercase;
@@ -243,3 +244,10 @@ a {
 .contact_email {
   font-size: 3.5rem;
   color: #00465f; }
+
+.clients_logo-wrapper {
+  padding: 0;
+  margin: 0; }
+
+.clients_logo {
+  list-style-type: none; }
