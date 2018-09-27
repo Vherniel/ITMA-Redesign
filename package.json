@@ -8,7 +8,7 @@
   },
   "scripts": {
     "sass": "node-sass -w scss/. -o build/css/ --recursive",
-    "pug": "pug index.pug -w -o build/"
+    "pug": "pug index.pug -P -w -o build/"
   },
   "repository": {
     "type": "git",
