@@ -1,9 +1,8 @@
 .header_container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 87.555%;
-  margin: auto;
+  width: 100%;
+  padding: $spacing;
 }
 
 .header_logo-wrapper {
@@ -11,8 +10,8 @@
 }
 
 .logo-btn {
-  display: inline-block;
-  width: 3.214rem;
+  display: block;
+  width: 44px; // TODO
 }
 
 .header_nav {
@@ -20,9 +19,7 @@
 }
 
 .nav-list {
-  display: inline-block;
-  display: flex;
-  justify-content: center;
+  text-align: center;
   list-style: none;
 }
 
@@ -34,7 +31,6 @@
 .nav-links {
   color: $color-primary;
   padding: 1rem 0.5rem;
-  text-transform: uppercase;
 }
 
 .header_cta-btn {
@@ -42,13 +38,10 @@
   text-align: right;
 }
 
-.header_cta-btn {
-  text-transform: uppercase;
-}
-
 #cta-btn_login {
   padding: 1rem 2.143rem;
   color: $color-regular-gray;
+  display: inline-block;
 }
 
 @media (max-width: 1150px) {

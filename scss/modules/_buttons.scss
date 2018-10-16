@@ -1,11 +1,13 @@
 .cta-btn {
   text-transform: uppercase;
   margin-top: 2rem;
+  display: block;
 }
 
 .cta-btn_signup {
+  display: inline-block;
   color: $color-white;
-  padding: 1rem 2.143rem;
+  padding: calc(1rem - 1px) 2.15rem;
   background-color: $color-primary;
   border: 1px solid transparent;
   transition: color 0.7s cubic-bezier(0.694, 0, 0.335, 1),
@@ -15,6 +17,7 @@
   &:hover {
     color: $color-primary;
     border: 1px solid $color-primary;
+    padding: calc(1rem - 1px) 2.15rem;
     background-color: transparent;
     transition: color 0.5s cubic-bezier(0.694, 0, 0.335, 1),
       background-color 0.5s cubic-bezier(0.694, 0, 0.335, 1),
@@ -24,7 +27,7 @@
 
 .cta-btn_learnmore {
   padding: 1rem 2.143rem;
-  color: $color-regular-gray;
+  color: $color-primary;
 }
 
 .cta-btn a {
